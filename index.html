@@ -25,7 +25,22 @@
             $(".js_cnt h3").click(function(){
                 $(this).hide(600);
             })
-        })
+        });
+        $(document).ready(function(){
+            $("#submit").click(function(){
+                $("textarea").fadeOut(1000);
+            })
+        });
+        $(document).ready(function(){
+            $("#hire").click(function(){
+                $(".hire").fadeToggle()
+            })
+        });
+        $(document).ready(function(){
+            $("#download").click(function(){
+                $(".download").fadeToggle()
+            })
+        });
     </script>
 </head>
 
@@ -44,14 +59,16 @@
                 <li><a href="#">About us</a></li>
             </ul>
             <div class="btn_btn">
-                <button class="btn">Hire me</button>
+                <button class="btn" id="hire">Hire me</button>
+                <p class="hire">Hire for contact with me</p>
             </div>
         </nav>
         <div class="container_content">
             <div class="content">
                 <h2>I'm <span> Sohel Rana</span> <br>I'm Website designer</h2>
                 <p>welcome my Portfolio Website where I put all my work related my design and many more</p>
-                <button class="btn">Download CV</button>
+                <button class="btn" id="download">Download CV</button>
+                <p class="download">Download successful</p>
                 <div class="social">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-solid fa-globe"></i></a>
@@ -73,6 +90,22 @@
                     <h3>Download successful !</h3>
                 </div>
             </div>
+        </div>
+        <div class="contact_me">
+            <h1>Contact With me</h1>
+            <h2 class="my_name">md: sohel rana</h2>
+            <p>Thakurgaon, Bangladesh</p>
+            <h3>Front-end Website developer</h3>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+           <div class="contact_way">
+            <h2>Message me</h2>
+            <textarea name="text" id="text_area" cols="40" rows="4" placeholder="Write Message"></textarea> <br>
+            <button type="submit" class="btn bg-success" id="submit">Submit</button>
+           </div>
         </div>
     </main>
     <footer>
