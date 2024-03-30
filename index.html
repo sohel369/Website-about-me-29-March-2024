@@ -21,25 +21,30 @@
                 $("h3").fadeIn(500);
             });
         });
-        $(document).ready(function(){
-            $(".js_cnt h3").click(function(){
+        $(document).ready(function () {
+            $(".js_cnt h3").click(function () {
                 $(this).hide(600);
             })
         });
-        $(document).ready(function(){
-            $("#submit").click(function(){
+        $(document).ready(function () {
+            $("#submit").click(function () {
                 $("textarea").fadeOut(1000);
             })
         });
-        $(document).ready(function(){
-            $("#hire").click(function(){
+        $(document).ready(function () {
+            $("#hire").click(function () {
                 $(".hire").fadeToggle()
             })
         });
-        $(document).ready(function(){
-            $("#download").click(function(){
+        $(document).ready(function () {
+            $("#download").click(function () {
                 $(".download").fadeToggle()
             })
+        });
+        $(document).ready(function () {
+            $(".last_p").mouseover(function () {
+                alert("copyright reserved! sohel rana 2024")
+            });
         });
     </script>
 </head>
@@ -101,15 +106,60 @@
                 <a href="#"><i class="fa-solid fa-globe"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-           <div class="contact_way">
-            <h2>Message me</h2>
-            <textarea name="text" id="text_area" cols="40" rows="4" placeholder="Write Message"></textarea> <br>
-            <button type="submit" class="btn bg-success" id="submit">Submit</button>
-           </div>
+            <div class="contact_way">
+                <h2>Message me</h2>
+                <textarea name="text" id="text_area" cols="40" rows="4" placeholder="Write Message"></textarea> <br>
+                <button type="submit" class="btn bg-success" id="submit">Submit</button>
+            </div>
         </div>
     </main>
     <footer>
         <!-- place footer here -->
+        <div class="footer">
+            <ul>
+                <h2>Info</h2>
+                <li><a href="#">Formats</a></li>
+                <li><a href="#">compression</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">policy</a></li>
+            </ul>
+            <ul>
+                <h2>Getting started</h2>
+                <li><a href="#">introduction</a></li>
+                <li><a href="#">themes</a></li>
+                <li><a href="#">documentation</a></li>
+                <li><a href="#">usage</a></li>
+                <li><a href="#">elements</a></li>
+                <li><a href="#">global</a></li>
+            </ul>
+            <ul>
+                <h2>resources</h2>
+                <li><a href="#">API</a></li>
+                <li><a href="#">validation</a></li>
+                <li><a href="#">accessibility</a></li>
+                <li><a href="#">marketplace</a></li>
+                <li><a href="#">visibility</a></li>
+                <li><a href="#">community</a></li>
+            </ul>
+            <ul class="last_ul">
+                <h2>newsletter</h2>
+                <p>subscribe to my newsletter for a weekly dose fo news, update helpful tips, and exclusive offers</p>
+                <div class="input">
+                  <form action="#">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit" class="btn bg-light">subscribe</button>
+                  </form>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </ul>
+        </div>
+        <p class="last_p">copyright reserved! <span>sohel rana</span> 2024</p>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

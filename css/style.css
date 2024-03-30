@@ -188,4 +188,77 @@ header .container_content .content .social a {
   cursor: pointer;
   transform: translateX(480px);
   margin-top: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 80vh;
+  background: #060E25;
+  display: flex;
+  align-items: center;
+}
+.footer h2 {
+  color: honeydew;
+  text-transform: capitalize;
+}
+.footer ul {
+  margin-left: 40px;
+}
+.footer li {
+  list-style: none;
+  display: block;
+  font-size: 16px;
+}
+.footer li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: honeydew;
+  cursor: pointer;
+}
+.footer .last_ul {
+  width: 30%;
+  margin-left: 140px;
+}
+.footer .last_ul p {
+  color: honeydew;
+}
+.footer .last_ul .input input {
+  border-radius: 8px;
+  background: #060E25;
+  color: honeydew;
+  outline: none;
+  padding: 4px 0;
+  border: 1px solid honeydew;
+  margin-right: 6px;
+}
+.footer .last_ul .input input::-moz-placeholder {
+  color: honeydew;
+}
+.footer .last_ul .input input::placeholder {
+  color: honeydew;
+}
+.footer .last_ul .input button {
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.footer .last_ul .social {
+  margin-top: 20px;
+}
+.footer .last_ul .social a {
+  margin-left: 10px;
+  color: honeydew;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.last_p {
+  text-align: center;
+  font-size: 24px;
+  color: #060E25;
+  display: block;
+}
+.last_p span {
+  color: #bf2c0b;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
